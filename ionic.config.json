@@ -1,0 +1,7 @@
+{
+  "name": "TP1-28837",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
