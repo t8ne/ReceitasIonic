@@ -1,17 +1,105 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">Ingredientes mais Utilizados: </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content"></div>
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end" style="margin-right: 2px">
+      <ion-button [routerLink]="['/perfil']">
+        <ion-icon
+          name="person-circle-outline"
+          size="large"
+          [routerLink]="['/perfil']"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Optionally set a height to the container if needed */
+  }
+</style>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+  <ion-card button="true">
+    <img
+      alt="Tripas"
+      src="https://www.cozinhatradicional.com/wp-content/uploads/2015/07/tripas_a_moda_do_porto.jpg"
+    />
+    <ion-card-header>
+      <ion-card-title>Tripas á Moda do Porto</ion-card-title>
+      <ion-card-subtitle>Receitas vindas do Porto</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Aprenda a fazer uma enorme marca portuense e um dos finalistas ás 7
+      maravilhas da gastronomia portuguesa.
+    </ion-card-content>
+    <ion-button
+      class="button-container"
+      type="outline"
+      fill="solid"
+      [routerLink]="['/details']"
+      style="--background: castanho"
+      >Ver mais</ion-button
+    >
+  </ion-card>
+  <ion-card button="true">
+    <img
+      alt="Caldo"
+      src="https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/shutterstock_316111241_CaldoVerde_GV_Natalia%20Mylova_660x371.jpg?itok=nEVwwtvi"
+    />
+    <ion-card-header>
+      <ion-card-title>Caldo Verde</ion-card-title>
+      <ion-card-subtitle>Receitas vindas do Norte</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Aprenda a cozinhar uma das 7 maravilhas da gastronomia portuguesa.
+    </ion-card-content>
+    <ion-button
+      class="button-container"
+      type="outline"
+      fill="solid"
+      [routerLink]="['/details2']"
+      style="--background: castanho"
+      >Ver mais</ion-button
+    >
+  </ion-card>
+  <ion-card button="true">
+    <img
+      alt="Francesinha"
+      src="https://iberismos.com/wp-content/uploads/2017/11/francesinha.jpg"
+    />
+    <ion-card-header>
+      <ion-card-title>Francesinha</ion-card-title>
+      <ion-card-subtitle>Receitas vindas do Porto</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Aprenda a fazer um dos verdadeiros símbolos da gastronomia do Porto: a
+      francesinha.
+    </ion-card-content>
+    <ion-button
+      class="button-container"
+      type="outline"
+      fill="solid"
+      [routerLink]="['/details3']"
+      style="--background: castanho"
+      >Ver mais</ion-button
+    >
+  </ion-card>
 </ion-content>

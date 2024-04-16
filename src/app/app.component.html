@@ -1,3 +1,41 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <!-- Set the custom background color for the toolbar -->
+      <ion-toolbar style="--background: #37210a !important">
+        <ion-title>Curiosidades</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p class="centered-item"><b>Ingredientes mais Utilizados:</b></p>
+      <br />
+      <ol>
+        <li class="lista">Água - 1,2L</li>
+        <li class="lista">Feijão Branco Seco - 500g</li>
+        <li class="lista">Dobrada - 1,5kg</li>
+        <li class="lista">Batata para Cozer - 600g</li>
+        <li class="lista">Chouriço de Carne - 310g</li>
+        <li class="lista">Tomates - 4 unidades</li>
+        <li class="lista">Cenouras - 3 unidades</li>
+        <li class="lista">Cebolas - 2 unidades</li>
+        <li class="lista">Dentes de Alho - 2 unidades</li>
+        <li class="lista">Presunto - 200g</li>
+      </ol>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+  <style>
+    .centered-item {
+      display: flex; /* Enable flexbox layout */
+      align-items: center; /* Center the items vertically */
+      justify-content: center; /* Center the items horizontally */
+    }
+    .lista {
+      font-size: 16px;
+      margin-right: 5%;
+      margin-top: 5%;
+    }
+  </style>
 </ion-app>

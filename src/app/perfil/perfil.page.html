@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Eu" src="assets\images\E2.jpg" />
+  </ion-card>
+
+  <ion-item>
+    <ion-label class="label-left">Nome:</ion-label>
+    <ion-text slot="end" class="text-right">António Rebelo</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Idade:</ion-label>
+    <ion-text slot="end">19</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Género:</ion-label>
+    <ion-text slot="end">Ionic</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Curso:</ion-label>
+    <ion-text slot="end">ECGM</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Data de Criação da App:</ion-label>
+    <ion-text slot="end">15-04-2024</ion-text>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label class="label-left">Prato Favorito:</ion-label>
+    <ion-text slot="end">Polvo á Lagareiro</ion-text>
+  </ion-item>
+</ion-content>
+
+<style>
+  ion-item {
+    --padding-start: 7%;
+    --padding-end: 7%;
+    margin-top: 1%;
+  }
+
+  .label-left {
+    font-size: 18px; /* Ajustar o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Deixar a fonte em negrito */
+    margin-top: 10px; /* Adicionar margem no topo do label */
+    padding-bottom: 5px; /* Adicionar espaço abaixo do label */
+  }
+
+  .text-right {
+    font-size: 16px; /* Ajustar o tamanho da fonte conforme necessário */
+    color: #ffffff; /* Alterar a cor do texto para preto */
+  }
+</style>
